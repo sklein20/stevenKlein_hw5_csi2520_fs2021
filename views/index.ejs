@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4 Portfolio</title>
+    <link rel="shortcut icon" href="../public/media/img/favicon.png" type="image/png">
+    <script src="https://kit.fontawesome.com/bee6fd2016.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <a href="#home" class = "nav">Home Page</a>
+                    
+            <a href="./html/my_resume.ejs" class = "nav">My Resume</a>
+                   
+            <a href="./html/my_fun_facts.ejs" class = "nav">Fun Facts About Me</a>
+
+            <a href="./html/trivia.ejs" class = "nav">Trivia</a>
+        </nav>
+    </header>
+    <main>
+        <h1>My name is Steven Klein, and welcome to my portfolio website.</h1>
+        <img src="../public/media/img/picture_of_me.jpg" width="30%" alt="Photo of Steven Sitting on a Rock" title="Steven Klein">
+    
+        <blockquote cite="https://yourstory.com/2017/05/quotes-by-dwayne-johnson/amp">
+            "Success isn’t always about ‘greatness’, it’s about consistency.<br> Consistent, hard work gains success" 
+            - Dwayne "The Rock" Johnson
+        </blockquote>
+
+        <br>
+        <section class="index_section">
+            <p>
+                Hello, I am from Eastpointe, MI which is located in Macomb county. I am currently pursuing a B.S. in Information 
+                Technology from Oakland University. My class standing is Senior, but I will not be graduating this year. I recently 
+                changed my major from Computer Science, so I have more classes to take in order to graduate. As you will see below, 
+                the progress bar shows the amount of credits I have earned so far. I have earned a lot of credits, but I am not as 
+                close to graduating as I would like to be. As of right now, I do not have any professional affiliation with a company 
+                with respect to web development or IT. I currently work as a Front End Assistant at Costco Wholesale. The jobs I have 
+                held in the past did not really relate to IT or anything similar. I was thinking about becoming a system administrator. 
+                I planned on starting as a help desk consultant and then working my way up. If you are interested in knowing more about 
+                me, please check out the 
+                <a href="html/my_resume.html" class="resume">My Resume</a></li> and <a href="html/my_fun_facts.html" class="fun_facts">Fun Facts About Me</a> pages.
+            </p>
+        </section>
+        <br>
+        <label for="survey_progress">Progress Towards a Bachelor's Degree</label>
+        <progress id="survey_progress" min=0 max=128 value=119> 93% </progress>
+    
+    </main>
+    
+    <footer>
+        <hr>
+        <p class="p_footer">&copy;Steven Klein, 2021</p>
+        <section class="section_footer">
+            <a href="mailto:sklein2@oakland.edu" aria-label="Email" target="_blank" class = "a_footer">
+                <i class="fas fa-at fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/steven.klein.79025" aria-label="Facebook" target="_blank" class = "a_footer">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/smklein16" aria-label="Twitter" target="_blank" class = "a_footer">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </section>
+    </footer>
+</body>
+</html>
