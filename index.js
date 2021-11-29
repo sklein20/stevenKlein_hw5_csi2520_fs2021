@@ -1,7 +1,7 @@
 const express = require('express');
 const ejs = require("ejs");
 // const http = require('http');
-// const path = require('path');
+const path = require('path');
 // const fs = require('fs');
 
 
@@ -13,21 +13,24 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //Initialize EJS Middleware
+
 app.set("view engine", "ejs");
 app.use("/public", express.static(__dirname + "/public"));
-// app.set('views', path.join(__dirname, '/public')); //maybe don't use
+app.set('views', path.join(__dirname, 'views')); //maybe don't use
+//app.set('views', path.join(__dirname, '/public')); //maybe don't use
+
 
 //Begin Server Logic
 app.get('/', (req, res) => {
     res.render('index');
 });
 
-app.get("/html/resume", (req, res) => {
-    res.render('/html/myresume');
+app.get("/resume", (req, res) => {
+    res.render('/html/my_resume');
 });
 
-app.get("/html/funfacts", (req, res) => {
-    res.render('/html/myfunfacts');
+app.get("/myfunfacts", (req, res) => {
+    res.render('/html/my_fun_facts');
 });
 
 app.get('/trivia', (req, res) => {
