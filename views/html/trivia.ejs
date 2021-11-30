@@ -11,73 +11,66 @@
 <body>
     <header id="trivia">
         <nav>
-            <a href="../index.ejs" class = "nav">Home Page</a>
+            <a href="/" class = "nav">Home Page</a>
                 
-            <a href="./my_resume.ejs" class = "nav">My Resume</a>
+            <a href="/resume" class = "nav">My Resume</a>
                 
-            <a href="./my_fun_facts.ejs" class = "nav">Fun Facts About Me</a>
+            <a href="/funFacts" class = "nav">Fun Facts About Me</a>
 
             <a href="#trivia" class = "nav">Trivia</a>
         </nav>
     </header>
     <h1>Trivia Page</h1>
-    
-    <p>Trivia Question #1: Who is the True Heir to the Iron Throne?</p>
-    <!-- let correct1 = "Jon Snow" -->
-    <!-- if(userInput === correct1)
-    {
-        counter++;
-        res.send("Correct!");
-    }
-else{
-    res.send("Sorry, better luck next time");
-} -->
-        <button>Tommen Baratheon</button>
-        <button>Jon Snow</button> <!--correct answer-->
-        <button>Danerys Targaryen</button>
-        <button>Stannis Baratheon</button>
-    <p>Trivia Question #2: Who Played James Bond the Longest?</p>
-    <!-- let correct2 = "Daniel Craig" -->
-    <!-- if(userInput === correct2)
-    {
-        counter++;
-        res.send("Correct!");
-    }
-else{
-    res.send("Sorry, better luck next time");
-} -->
-        <button>Pierce Brosnan</button>
-        <button>Sean Connery</button>
-        <button>Daniel Craig</button> <!--correct answer-->
-        <button>Roger Moore</button>
-    <p>Trivia Question #3: Which Christmas Movie features a main character named 'Clark Griswold'?</p>
-    <!-- let correct3 = "National Lampoon's : Christmas Vacation" -->
-    <!-- if(userInput === correct3)
-    {
-        counter++;
-        res.send("Correct!");
-    }
-else{
-    res.send("Sorry, better luck next time");
-} -->
-        <button>A Christmas Story</button>
-        <button>Home Alone</button>
-        <button>Die Hard</button>
-        <button>National Lampoon's : Christmas Vacation</button> <!--correct answer-->
-    <p>Trivia Question #4: What is the Name of the Wizard from the Lord of the Rings Franchise?</p>
-    <!-- let correct4 = "Gandalf the White" -->
-    <!-- if(userInput === correct4)
-    {
-        counter++;
-        res.send("Correct!");
-    }
-else{
-    res.send("Sorry, better luck next time");
-} -->
-        <button>Gandalf the White</button> <!--correct answer-->
-        <button>Gordolf the Grey</button>
-        <button>Gannandorf the White</button>
-        <button>Grandorf the Blue</button>
+    <form action="url" method="post">
+        Trivia Question #1: In Game of Thrones, who is the True Heir to the Iron Throne?<br>
+        A. Tommen Baratheon <br>
+        B. Jon Snow <br><!--correct answer-->
+        C. Danerys Targaryen <br>
+        D. Stannis Baratheon <br>
+        <input type="text"></input>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="url" method="post">
+        Trivia Question #2: Who Played James Bond the Longest?<br>
+        A. Pierce Brosnan <br>
+        B. Sean Conner <br>
+        C. Daniel Craig <br> <!--correct answer-->
+        D. Roger Moore <br>
+        <input type="text"></input>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="url" method="post">
+        Trivia Question #3: Which Christmas Movie features a main character named 'Clark Griswold'?<br>
+        A. A Christmas Story <br>
+        B. Home Alone <br>
+        C. Die Hard <br>
+        D. National Lampoon's : Christmas Vacation <br> <!--correct answer-->
+        <input type="text"></input>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="url" method="post">
+        Trivia Question #4: What is the Name of the Wizard from the Lord of the Rings Franchise?<br>
+        A. Gandalf the White <br> <!--correct answer-->
+        B. Gordolf the Grey <br>
+        C. Gannandorf the White <br>
+        D. Dumbledore <br>
+        <input type="text"></input>
+        <button type="submit">Submit</button>
+    </form>
+
+    <form action="url" method="post">
+        Trivia Question #5: Who Played Clark Kent in 'Man of Steel'?<br>
+        A. Brandon Routh <br>
+        B. Christopher Reeve <br>
+        C. Henry Cavill <br> <!--correct answer-->
+        D. Tyler Hoechlin <br>
+        <input type="text"></input>
+        <button type="submit">Submit</button>
+    </form>
+
     <p>Trivia Question #5: Who Played Clark Kent in 'Man of Steel'?</p>
     <!-- let correct5 = "Henry Cavill" -->
     <!-- if(userInput === correct5)
@@ -88,9 +81,6 @@ else{
 else{
     res.send("Sorry, better luck next time");
 } -->
-        <button>Brandon Routh</button>
-        <button>Christopher Reeve</button>
-        <button>Henry Cavill</button> <!--correct answer-->
-        <button>Tyler Hoechlin</button>
+        
 </body>
 </html>
