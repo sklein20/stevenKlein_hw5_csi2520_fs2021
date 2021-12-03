@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW 5</title>
     <link rel="shortcut icon" href="../../public/media/img/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/bee6fd2016.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../public/css/style.css">
 </head>
 <body>
@@ -21,57 +22,89 @@
         </nav>
     </header>
     <h1>Trivia Page</h1>
-    <form action="url" method="post">
-        Trivia Question #1: In Game of Thrones, who is the True Heir to the Iron Throne?<br>
-        A. Tommen Baratheon <br>
-        B. Jon Snow <br><!--correct answer-->
-        C. Danerys Targaryen <br>
-        D. Stannis Baratheon <br>
-        <input type="text"></input>
-        <button type="submit">Submit</button>
+    <p class="p_trivia_instruc">Instructions: Type the Letter of What you Believe the Correct Answer in the Box. After all of the questions have been answered,
+        hit the "enter" button on your keyboard.</p>
+    <form action="/questions" method="post">
+        <label>Question #1: In Game of Thrones, who is the True Heir to the Iron Throne? </label><br>
+            <p class="p_trivia">A. Tommen Baratheon</p>
+            <p class="p_trivia">B. Jon Snow</p><!--correct answer-->
+            <p class="p_trivia">C. Danerys Targaryen</p>
+            <p class="p_trivia">D. Stannis Baratheon</p>
+        <input type="text" name="answer1"></input>
+        <!-- <button id="question1" type="submit" value="SUBMIT">Submit</button> -->
+
+        <label>Question #2: Who Played James Bond the Longest? </label>
+            <p class="p_trivia">A. Pierce Brosnan</p>
+            <p class="p_trivia">B. Sean Conner</p>
+            <p class="p_trivia">C. Daniel Craig</p><!--correct answer-->
+            <p class="p_trivia">D. Roger Moore</p>
+        <input type="text" name="answer2"></input>
+        <!-- <button id="question2" type="submit" value="SUBMIT">Submit</button> -->
+
+        <label>Question #3: Which Christmas Movie features a main character named 'Clark Griswold'? </label>
+            <p class="p_trivia">A. Home Alone</p>
+            <p class="p_trivia">B. A Christmas Story</p>
+            <p class="p_trivia">C. Die Hard</p>
+            <p class="p_trivia">D. National Lampoon's : Christmas Vacation</p><!--correct answer-->
+        <input type="text" name="answer3"></input>
+        <!-- <button id="question3" type="submit" value="SUBMIT">Submit</button> -->
+
+        <label>Question #4: What is the Name of the Wizard from the Lord of the Rings Franchise? </label>
+            <p class="p_trivia">A. Gandalf the White</p><!--correct answer-->
+            <p class="p_trivia">B. Gordolf the Grey</p>
+            <p class="p_trivia">C. Gannandorf the White</p> 
+            <p class="p_trivia">D. Dumbledore</p>
+        <input type="text" name="answer4"></input>
+        <!-- <button id="question4" type="submit" value="SUBMIT">Submit</button> -->
+
+        <label>Question #5: Who Played Clark Kent in 'Man of Steel'? </label>
+            <p class="p_trivia">A. Brandon Routh</p>
+            <p class="p_trivia">B. Christopher Reeve</p>
+            <p class="p_trivia">C. Henry Cavill</p><!--correct answer-->
+            <p class="p_trivia">D. Tyler Hoechlin</p>
+        <input type="text" name="answer5"></input>
+        <!-- <button id="question5" type="submit" value="SUBMIT">Submit</button> -->
+    </form>
+
+    <form action="/score" method="get">
+        <button id="finalScore" method="post">Total Score</button>
+    </form>
+
+    <footer>
+        <hr>
+        <p class="p_footer">&copy;Steven Klein, 2021</p>
+        <section class="section_footer">
+            <a href="mailto:sklein2@oakland.edu" aria-label="Email" target="_blank" class = "a_footer">
+                <i class="fas fa-at fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/steven.klein.79025" aria-label="Facebook" target="_blank" class = "a_footer">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/smklein16" aria-label="Twitter" target="_blank" class = "a_footer">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+        </section>
+    </footer>
+
+    
+
+    <!-- <form action="url" method="post">
+        
     </form>
 
     <form action="url" method="post">
-        Trivia Question #2: Who Played James Bond the Longest?<br>
-        A. Pierce Brosnan <br>
-        B. Sean Conner <br>
-        C. Daniel Craig <br> <!--correct answer-->
-        D. Roger Moore <br>
-        <input type="text"></input>
-        <button type="submit">Submit</button>
+        
     </form>
 
     <form action="url" method="post">
-        Trivia Question #3: Which Christmas Movie features a main character named 'Clark Griswold'?<br>
-        A. A Christmas Story <br>
-        B. Home Alone <br>
-        C. Die Hard <br>
-        D. National Lampoon's : Christmas Vacation <br> <!--correct answer-->
-        <input type="text"></input>
-        <button type="submit">Submit</button>
+        
     </form>
 
     <form action="url" method="post">
-        Trivia Question #4: What is the Name of the Wizard from the Lord of the Rings Franchise?<br>
-        A. Gandalf the White <br> <!--correct answer-->
-        B. Gordolf the Grey <br>
-        C. Gannandorf the White <br>
-        D. Dumbledore <br>
-        <input type="text"></input>
-        <button type="submit">Submit</button>
-    </form>
+        
+    </form> -->
 
-    <form action="url" method="post">
-        Trivia Question #5: Who Played Clark Kent in 'Man of Steel'?<br>
-        A. Brandon Routh <br>
-        B. Christopher Reeve <br>
-        C. Henry Cavill <br> <!--correct answer-->
-        D. Tyler Hoechlin <br>
-        <input type="text"></input>
-        <button type="submit">Submit</button>
-    </form>
-
-    <p>Trivia Question #5: Who Played Clark Kent in 'Man of Steel'?</p>
+    
     <!-- let correct5 = "Henry Cavill" -->
     <!-- if(userInput === correct5)
     {
