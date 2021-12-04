@@ -298,3 +298,9 @@ label
 {
     margin-top: 15px;
 }
+
+#scoreButton
+{
+    margin-left: auto;
+    margin-right: auto;
+}
