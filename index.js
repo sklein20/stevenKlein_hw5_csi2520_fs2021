@@ -37,11 +37,10 @@ app.post('/url', (req, res) => {
     if (data1 == trivia1)
     {
         score++;
-        // res.send(`Great Job!`);
     }
     else
     {
-        // res.send(`Better Luck Next Time`);
+   
     }
     //*************************************************************************
     let data2 = req.body.answer2;
@@ -49,11 +48,10 @@ app.post('/url', (req, res) => {
     if (data2 == trivia2)
     {
         score++;
-        // res.send(`Great Job!`);
     }
     else
     {
-        // res.send(`Better Luck Next Time`);
+
     }
     //*************************************************************************/
     let data3 = req.body.answer3;
@@ -61,11 +59,10 @@ app.post('/url', (req, res) => {
     if (data3 == trivia3)
     {
         score++;
-        // res.send(`Great Job!`);
     }
     else
     {
-        // res.send(`Better Luck Next Time`);
+  
     }
     //************************************************************************** */
     let data4 = req.body.answer4;
@@ -73,11 +70,10 @@ app.post('/url', (req, res) => {
     if (data4 == trivia4)
     {
         score++;
-        // res.send(`Great Job!`);
     }
     else
     {
-        // res.send(`Better Luck Next Time`);
+    
     }
     //****************************************************************************** */
     let data5 = req.body.answer5;
@@ -85,11 +81,10 @@ app.post('/url', (req, res) => {
     if (data5 == trivia5)
     {
         score++;
-        // res.send(`Great Job!`);
     }
     else
     {
-        // res.send(`Better Luck Next Time`);
+
     }
     console.log(score);
     res.send({score: score});
