@@ -86,7 +86,7 @@ app.post('/url', (req, res) => {
     {
 
     }
-    console.log(score);
+    
     res.send({score: score});
 });
 
