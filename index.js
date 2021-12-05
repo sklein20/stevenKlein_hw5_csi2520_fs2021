@@ -23,7 +23,7 @@ app.get("/resume", (req, res) => {
 });
 
 app.get('/funFacts', (req, res) => {
-    res.render('./html/funfacts');
+    res.render('./html/funFacts');
 });
 
 app.get('/trivia', (req, res) => {
